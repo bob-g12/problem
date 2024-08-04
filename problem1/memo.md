@@ -14,12 +14,7 @@ javascript で test.txt を取得し、内容を表示する
 
 # 詰まったポイント
 
-1. javascript から PHP を呼び出す方法が分からず
-"javascript PHP 呼び出し方" で検索し、XMLHttpRequest を使用することを知り、
-各種メソッドを調べることで扱い方が分かりました。
-
-2. XMLHttpRequest で取得した内容のテキストを扱う方法が分からず、
-"xmlhttprequest text" で検索し、responseTextを使用することで解決しました
+1. 
 
 # 参考サイト
 
