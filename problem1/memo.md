@@ -1,22 +1,16 @@
 # 作成した機能
-test.txt の内容を PHP で取得、初めから表示し、
-追加ボタンで同じ内容を追加で表示する動作を作成しました。
+ボタンを押すとテキストファイルの文字列が表示される機能を作成しました。
 
 # ファイル構成
 problem
-　└ problem2
+　└ problem1
     　├ text_display.html
-    　├ display.js
-    　├ get.php
+    　├ text_add.js
     　└ test.txt
 
 # ディレクトリ・ファイル解説
-text_display.html を表示した時点で display.js から　get.php の
-テキストファイルの内容を取得する処理をリクエストし、
-test.txtの内容がphpファイル → jsファイルへと渡りhtml のタグへと挿入される
-
 画面上の追加ボタンを押すと
-上記で取得した内容を追加で表示する
+javascript で test.txt を取得し、内容を表示する
 
 # 詰まったポイント
 
