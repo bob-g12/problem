@@ -5,13 +5,13 @@ test.txt の内容を PHP で取得、初めから表示し、
 # ファイル構成
 problem
 　└ problem2
-    　├ text_display.html
+    　├ index.html
     　├ display.js
     　├ get.php
     　└ test.txt
 
 # ディレクトリ・ファイル解説
-text_display.html を表示した時点で display.js から　get.php の
+text_display.html を表示した時点で display.js から get.php の
 テキストファイルの内容を取得する処理をリクエストし、
 test.txtの内容がphpファイル → jsファイルへと渡りhtml のタグへと挿入される
 
