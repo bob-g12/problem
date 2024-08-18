@@ -27,8 +27,10 @@ phpfile.onreadystatechange = function(){
 let i = 1;
 // 追加ボタンを押した際の動作
 const add = () => {
+    // phpから受け取った内容のテキストを受け取る
+    const receive_data = phpfile.responseText;
     // データベースから取得した値を配列に変換
-    let text_data = phpfile.responseText.split(',');
+    const text_data = receive_data.split(',');
     // ボタンのカウントを１進める
     i++;
     if(text_data[0] >= i){
@@ -44,3 +46,9 @@ const add = () => {
         console.log("これ以上表示できません");
     }
 }
+
+function test(){
+    return 1;
+}
+
+const test = 1;
