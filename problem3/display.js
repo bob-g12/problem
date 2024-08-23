@@ -46,9 +46,3 @@ const add = () => {
         console.log("これ以上表示できません");
     }
 }
-
-function test(){
-    return 1;
-}
-
-const test = 1;
