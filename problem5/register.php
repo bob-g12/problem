@@ -21,9 +21,9 @@ $stmt->bindParam(':username', $username);
 $stmt->bindParam(':password', $password);
 
 if ($stmt->execute()) {
-    // 登録が成功した場合、200ステータスを返す
-    http_response_code(200);
-    echo "success";
+    // 登録が成功した場合、ログイン画面へリダイレクト
+    header("Location: index.html");
+    exit();
 } else {
     echo "データ追加に失敗しました。";
 }
