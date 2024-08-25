@@ -7,11 +7,12 @@ document.getElementById('registerBtn').addEventListener('click', async function(
             body: formData
         });
 
-        if (response.ok) {
+        const data = await response.text();
+        if (response.ok && data.trim() === '') {
             // 登録が成功した場合、ログイン画面にリダイレクト
             window.location.href = 'index.html';
         } else {
-            const data = await response.text();
+            // エラーメッセージを表示
             document.getElementById('registerResponse').textContent = data;
         }
     } catch (error) {
